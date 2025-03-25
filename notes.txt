@@ -1,0 +1,20 @@
+agent
+a system powered by LLM that decides what actions to take
+
+agent runtime
+runs agent in a loop
+
+langchain not cyclical 
+
+langgraph creates cyclical runtime
+
+there are agent executors and chatbot executors 
+
+langsmith for tracing / logging
+`os.environ("LANGCHAIN_TRACING_V2") = "true`
+
+each node can pass/push updates to state, instead of passing the state around from node to node
+
+two types of edges
+conditional: based on result take different path
+normal: always execute
