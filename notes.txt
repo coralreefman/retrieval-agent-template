@@ -18,3 +18,12 @@ each node can pass/push updates to state, instead of passing the state around fr
 two types of edges
 conditional: based on result take different path
 normal: always execute
+
+
+
+Agents leverage the reasoning capabilities of LLMs to make decisions during execution. Using agents allow you to offload some discretion over the retrieval process. Although their behavior is less predictable than chains, they offer some advantages in this context:
+
+Agents generate the input to the retriever directly, without necessarily needing us to explicitly build in contextualization, as we did above;
+Agents can execute multiple retrieval steps in service of a query, or refrain from executing a retrieval step altogether (e.g., in response to a generic greeting from a user).
+Retrieval tool
+Agents can access "tools" and manage their execution. 
