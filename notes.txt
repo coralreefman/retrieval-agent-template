@@ -27,3 +27,6 @@ Agents generate the input to the retriever directly, without necessarily needing
 Agents can execute multiple retrieval steps in service of a query, or refrain from executing a retrieval step altogether (e.g., in response to a generic greeting from a user).
 Retrieval tool
 Agents can access "tools" and manage their execution. 
+
+
+LLM's can be augmented in many ways e.g. with adding memory or tool calls
